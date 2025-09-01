@@ -17,21 +17,30 @@ namespace AtividadeAppC_
         {
             InitializeComponent();
         }
-
+        double idade, salario2, salario, aumento;
+        string nome, sexo;
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            double idade, salario, abono;
-            char sexo;
-            string nome;
+
 
             nome = txtnome.Text;
-            sexo = Convert.ToChar(txtsexo.Text);
+            sexo = txtsexo.Text;
             idade = Convert.ToDouble(txtidade.Text);
             salario = Convert.ToDouble(txtsalario.Text);
 
             if (sexo.Equals("M"))
                 if (idade >= 30)
-                    abono = salario + 100;
+                    aumento = 100;
+                else
+                    aumento = 50;
+            else if (sexo.Equals("F"))
+                if (idade >= 30)
+                    aumento = 200;
+                else
+                    aumento = 150;
+
+            salario2 = salario + aumento;
+            txtresultado.Text = salario2.ToString() + " é o novo salário de " + nome;
             
                 
         }

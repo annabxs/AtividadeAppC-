@@ -30,7 +30,6 @@
         {
             this.btncalcular = new System.Windows.Forms.Button();
             this.txtresultado = new System.Windows.Forms.TextBox();
-            this.lblresultado = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.lblnome = new System.Windows.Forms.Label();
             this.txtidade = new System.Windows.Forms.TextBox();
@@ -39,44 +38,34 @@
             this.lblsexo = new System.Windows.Forms.Label();
             this.txtsalario = new System.Windows.Forms.TextBox();
             this.lblsalario = new System.Windows.Forms.Label();
+            this.btnlimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncalcular
             // 
             this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btncalcular.Location = new System.Drawing.Point(181, 246);
+            this.btncalcular.Location = new System.Drawing.Point(136, 332);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(125, 41);
             this.btncalcular.TabIndex = 9;
-            this.btncalcular.Text = "calcular";
+            this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
             this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // txtresultado
             // 
             this.txtresultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtresultado.Location = new System.Drawing.Point(297, 200);
+            this.txtresultado.Location = new System.Drawing.Point(136, 249);
             this.txtresultado.Name = "txtresultado";
             this.txtresultado.ReadOnly = true;
             this.txtresultado.Size = new System.Drawing.Size(491, 30);
             this.txtresultado.TabIndex = 8;
             this.txtresultado.TextChanged += new System.EventHandler(this.txttotalpago_TextChanged);
             // 
-            // lblresultado
-            // 
-            this.lblresultado.AutoSize = true;
-            this.lblresultado.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresultado.Location = new System.Drawing.Point(61, 205);
-            this.lblresultado.Name = "lblresultado";
-            this.lblresultado.Size = new System.Drawing.Size(230, 25);
-            this.lblresultado.TabIndex = 7;
-            this.lblresultado.Text = "O total a ser pago é: R$";
-            this.lblresultado.Click += new System.EventHandler(this.lbltotalpago_Click);
-            // 
             // txtnome
             // 
             this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtnome.Location = new System.Drawing.Point(297, 15);
+            this.txtnome.Location = new System.Drawing.Point(282, 65);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 30);
             this.txtnome.TabIndex = 6;
@@ -86,7 +75,7 @@
             // 
             this.lblnome.AutoSize = true;
             this.lblnome.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnome.Location = new System.Drawing.Point(146, 18);
+            this.lblnome.Location = new System.Drawing.Point(131, 68);
             this.lblnome.Name = "lblnome";
             this.lblnome.Size = new System.Drawing.Size(145, 25);
             this.lblnome.TabIndex = 5;
@@ -96,7 +85,7 @@
             // txtidade
             // 
             this.txtidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtidade.Location = new System.Drawing.Point(297, 51);
+            this.txtidade.Location = new System.Drawing.Point(282, 101);
             this.txtidade.Name = "txtidade";
             this.txtidade.Size = new System.Drawing.Size(100, 30);
             this.txtidade.TabIndex = 11;
@@ -106,7 +95,7 @@
             // 
             this.lblidade.AutoSize = true;
             this.lblidade.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblidade.Location = new System.Drawing.Point(146, 54);
+            this.lblidade.Location = new System.Drawing.Point(131, 104);
             this.lblidade.Name = "lblidade";
             this.lblidade.Size = new System.Drawing.Size(141, 25);
             this.lblidade.TabIndex = 10;
@@ -116,7 +105,7 @@
             // txtsexo
             // 
             this.txtsexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtsexo.Location = new System.Drawing.Point(297, 87);
+            this.txtsexo.Location = new System.Drawing.Point(282, 137);
             this.txtsexo.Name = "txtsexo";
             this.txtsexo.Size = new System.Drawing.Size(100, 30);
             this.txtsexo.TabIndex = 13;
@@ -125,7 +114,7 @@
             // 
             this.lblsexo.AutoSize = true;
             this.lblsexo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsexo.Location = new System.Drawing.Point(146, 90);
+            this.lblsexo.Location = new System.Drawing.Point(131, 140);
             this.lblsexo.Name = "lblsexo";
             this.lblsexo.Size = new System.Drawing.Size(133, 25);
             this.lblsexo.TabIndex = 12;
@@ -134,7 +123,7 @@
             // txtsalario
             // 
             this.txtsalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtsalario.Location = new System.Drawing.Point(297, 123);
+            this.txtsalario.Location = new System.Drawing.Point(282, 173);
             this.txtsalario.Name = "txtsalario";
             this.txtsalario.Size = new System.Drawing.Size(100, 30);
             this.txtsalario.TabIndex = 15;
@@ -143,17 +132,28 @@
             // 
             this.lblsalario.AutoSize = true;
             this.lblsalario.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsalario.Location = new System.Drawing.Point(146, 126);
+            this.lblsalario.Location = new System.Drawing.Point(131, 176);
             this.lblsalario.Name = "lblsalario";
             this.lblsalario.Size = new System.Drawing.Size(151, 25);
             this.lblsalario.TabIndex = 14;
             this.lblsalario.Text = "Insira o salario:";
+            // 
+            // btnlimpar
+            // 
+            this.btnlimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnlimpar.Location = new System.Drawing.Point(293, 332);
+            this.btnlimpar.Name = "btnlimpar";
+            this.btnlimpar.Size = new System.Drawing.Size(125, 41);
+            this.btnlimpar.TabIndex = 16;
+            this.btnlimpar.Text = "Limpar";
+            this.btnlimpar.UseVisualStyleBackColor = true;
             // 
             // frmexercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnlimpar);
             this.Controls.Add(this.txtsalario);
             this.Controls.Add(this.lblsalario);
             this.Controls.Add(this.txtsexo);
@@ -162,7 +162,6 @@
             this.Controls.Add(this.lblidade);
             this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.txtresultado);
-            this.Controls.Add(this.lblresultado);
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.lblnome);
             this.Name = "frmexercicio2";
@@ -176,7 +175,6 @@
 
         private System.Windows.Forms.Button btncalcular;
         private System.Windows.Forms.TextBox txtresultado;
-        private System.Windows.Forms.Label lblresultado;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label lblnome;
         private System.Windows.Forms.TextBox txtidade;
@@ -185,5 +183,6 @@
         private System.Windows.Forms.Label lblsexo;
         private System.Windows.Forms.TextBox txtsalario;
         private System.Windows.Forms.Label lblsalario;
+        private System.Windows.Forms.Button btnlimpar;
     }
 }

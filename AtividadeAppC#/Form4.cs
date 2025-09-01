@@ -16,5 +16,24 @@ namespace AtividadeAppC_
         {
             InitializeComponent();
         }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            double VU, P, LC;
+
+            LC = Convert.ToDouble(txtquantidadelivros.Text);
+
+            if (LC < 10)
+            {
+                VU = 12;
+            }
+            else
+            {
+                VU = 8;
+            }
+
+            P = LC * VU;
+            txttotalpago.Text = P.ToString(); 
+        }
     }
 }

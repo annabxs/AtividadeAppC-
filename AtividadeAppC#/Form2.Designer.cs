@@ -33,13 +33,14 @@
             this.txtrendatotal = new System.Windows.Forms.TextBox();
             this.lblrendatotal = new System.Windows.Forms.Label();
             this.btncalcular = new System.Windows.Forms.Button();
+            this.btnlimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbltotalpublico
             // 
             this.lbltotalpublico.AutoSize = true;
             this.lbltotalpublico.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalpublico.Location = new System.Drawing.Point(57, 48);
+            this.lbltotalpublico.Location = new System.Drawing.Point(60, 87);
             this.lbltotalpublico.Name = "lbltotalpublico";
             this.lbltotalpublico.Size = new System.Drawing.Size(214, 25);
             this.lbltotalpublico.TabIndex = 0;
@@ -48,7 +49,7 @@
             // txtpublicototal
             // 
             this.txtpublicototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtpublicototal.Location = new System.Drawing.Point(313, 43);
+            this.txtpublicototal.Location = new System.Drawing.Point(316, 82);
             this.txtpublicototal.Name = "txtpublicototal";
             this.txtpublicototal.Size = new System.Drawing.Size(100, 30);
             this.txtpublicototal.TabIndex = 1;
@@ -56,7 +57,7 @@
             // txtrendatotal
             // 
             this.txtrendatotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtrendatotal.Location = new System.Drawing.Point(313, 133);
+            this.txtrendatotal.Location = new System.Drawing.Point(316, 172);
             this.txtrendatotal.Name = "txtrendatotal";
             this.txtrendatotal.ReadOnly = true;
             this.txtrendatotal.Size = new System.Drawing.Size(100, 30);
@@ -66,7 +67,7 @@
             // 
             this.lblrendatotal.AutoSize = true;
             this.lblrendatotal.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrendatotal.Location = new System.Drawing.Point(57, 138);
+            this.lblrendatotal.Location = new System.Drawing.Point(60, 177);
             this.lblrendatotal.Name = "lblrendatotal";
             this.lblrendatotal.Size = new System.Drawing.Size(264, 25);
             this.lblrendatotal.TabIndex = 2;
@@ -75,19 +76,30 @@
             // btncalcular
             // 
             this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btncalcular.Location = new System.Drawing.Point(197, 209);
+            this.btncalcular.Location = new System.Drawing.Point(125, 281);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(125, 41);
             this.btncalcular.TabIndex = 4;
-            this.btncalcular.Text = "calcular";
+            this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
             this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
+            // 
+            // btnlimpar
+            // 
+            this.btnlimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnlimpar.Location = new System.Drawing.Point(281, 281);
+            this.btnlimpar.Name = "btnlimpar";
+            this.btnlimpar.Size = new System.Drawing.Size(125, 41);
+            this.btnlimpar.TabIndex = 5;
+            this.btnlimpar.Text = "Limpar";
+            this.btnlimpar.UseVisualStyleBackColor = true;
             // 
             // frmexercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnlimpar);
             this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.txtrendatotal);
             this.Controls.Add(this.lblrendatotal);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.TextBox txtrendatotal;
         private System.Windows.Forms.Label lblrendatotal;
         private System.Windows.Forms.Button btncalcular;
+        private System.Windows.Forms.Button btnlimpar;
     }
 }

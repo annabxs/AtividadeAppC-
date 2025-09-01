@@ -27,16 +27,16 @@ namespace AtividadeAppC_
 
         private void tsmi2_Click(object sender, EventArgs e)
         {
-            frmexercicio2 frmexercicio2 = new frmexercicio2();
+            frmexercicio3 frmexercicio3 = new frmexercicio3();
             Hide();
-            frmexercicio2.Show();
+            frmexercicio3.Show();
         }
 
         private void tsmi3_Click(object sender, EventArgs e)
         {
-            frmexercicio3 frmexercicio3 = new frmexercicio3();
+            frmexercicio2 frmexercicio2 = new frmexercicio2();
             Hide();
-            frmexercicio3.Show();
+            frmexercicio2.Show();
         }
 
         private void tsmi4_Click(object sender, EventArgs e)

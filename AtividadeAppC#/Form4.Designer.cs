@@ -38,17 +38,18 @@
             // btncalcular
             // 
             this.btncalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btncalcular.Location = new System.Drawing.Point(208, 198);
+            this.btncalcular.Location = new System.Drawing.Point(102, 285);
             this.btncalcular.Name = "btncalcular";
             this.btncalcular.Size = new System.Drawing.Size(125, 41);
             this.btncalcular.TabIndex = 14;
             this.btncalcular.Text = "calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // txttotalpago
             // 
             this.txttotalpago.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txttotalpago.Location = new System.Drawing.Point(324, 122);
+            this.txttotalpago.Location = new System.Drawing.Point(333, 184);
             this.txttotalpago.Name = "txttotalpago";
             this.txttotalpago.ReadOnly = true;
             this.txttotalpago.Size = new System.Drawing.Size(100, 30);
@@ -58,7 +59,7 @@
             // 
             this.lbltotalpago.AutoSize = true;
             this.lbltotalpago.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalpago.Location = new System.Drawing.Point(88, 127);
+            this.lbltotalpago.Location = new System.Drawing.Point(97, 189);
             this.lbltotalpago.Name = "lbltotalpago";
             this.lbltotalpago.Size = new System.Drawing.Size(230, 25);
             this.lbltotalpago.TabIndex = 12;
@@ -67,7 +68,7 @@
             // txtquantidadelivros
             // 
             this.txtquantidadelivros.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtquantidadelivros.Location = new System.Drawing.Point(324, 32);
+            this.txtquantidadelivros.Location = new System.Drawing.Point(382, 98);
             this.txtquantidadelivros.Name = "txtquantidadelivros";
             this.txtquantidadelivros.Size = new System.Drawing.Size(100, 30);
             this.txtquantidadelivros.TabIndex = 11;
@@ -76,7 +77,7 @@
             // 
             this.lblnome.AutoSize = true;
             this.lblnome.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnome.Location = new System.Drawing.Point(39, 37);
+            this.lblnome.Location = new System.Drawing.Point(97, 103);
             this.lblnome.Name = "lblnome";
             this.lblnome.Size = new System.Drawing.Size(279, 25);
             this.lblnome.TabIndex = 10;
