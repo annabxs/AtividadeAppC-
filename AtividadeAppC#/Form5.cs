@@ -87,9 +87,7 @@ namespace AtividadeAppC_
                     txtitem.Text = saida;
                     break;
 
-                default:
-                    MessageBox.Show("Código inválido");
-                    break;
+                
             }
 
         }

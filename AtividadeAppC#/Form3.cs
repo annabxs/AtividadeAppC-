@@ -23,13 +23,8 @@ namespace AtividadeAppC_
         private void btncalcular_Click(object sender, EventArgs e)
         {
 
-            bool isNumeric = double.TryParse(txtidade.Text, out idade);
-            if (!isNumeric)
-            {
-                MessageBox.Show("Por favor, insira um valor numérico válido para a idade.");
-                return; // Sai do método se a conversão falhar
-            }
-             isNumeric = double.TryParse(txtsalario.Text, out salario);
+            
+             
             
             nome = txtnome.Text;
             sexo = txtsexo.Text;
@@ -47,10 +42,7 @@ namespace AtividadeAppC_
                     aumento = 200;
                 else
                     aumento = 150;
-            else { 
-                MessageBox.Show("Insira M ou F para sexo.");
-            return;
-            }
+            
 
 
 
