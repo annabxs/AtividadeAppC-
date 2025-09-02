@@ -32,5 +32,19 @@ namespace AtividadeAppC_
 
             txtrendatotal.Text = rendatotal.ToString();
         }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtpublicototal.Clear();
+            txtrendatotal.Clear();
+            txtpublicototal.Focus();    
+        }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            frmmenu menu = new frmmenu(); 
+            menu.Show();
+            this.Hide();
+        }
     }
 }

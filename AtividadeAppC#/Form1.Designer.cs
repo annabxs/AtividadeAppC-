@@ -34,20 +34,24 @@
             this.tsmi3 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi4 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmisair = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmlista.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsmlista
             // 
+            this.tsmlista.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsmlista.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi1,
             this.tsmi2,
             this.tsmi3,
             this.tsmi4,
-            this.tsmi5});
+            this.tsmi5,
+            this.tsmisair});
             this.tsmlista.Location = new System.Drawing.Point(0, 0);
             this.tsmlista.Name = "tsmlista";
-            this.tsmlista.Size = new System.Drawing.Size(800, 24);
+            this.tsmlista.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.tsmlista.Size = new System.Drawing.Size(1067, 24);
             this.tsmlista.TabIndex = 0;
             this.tsmlista.Text = "menuStrip1";
             // 
@@ -86,14 +90,23 @@
             this.tsmi5.Text = "Exercício5";
             this.tsmi5.Click += new System.EventHandler(this.tsmi5_Click);
             // 
+            // tsmisair
+            // 
+            this.tsmisair.Name = "tsmisair";
+            this.tsmisair.Size = new System.Drawing.Size(38, 20);
+            this.tsmisair.Text = "Sair";
+            this.tsmisair.Click += new System.EventHandler(this.tsmisair_Click);
+            // 
             // frmmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.tsmlista);
             this.MainMenuStrip = this.tsmlista;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmmenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.tsmlista.ResumeLayout(false);
             this.tsmlista.PerformLayout();
@@ -110,6 +123,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi3;
         private System.Windows.Forms.ToolStripMenuItem tsmi4;
         private System.Windows.Forms.ToolStripMenuItem tsmi5;
+        private System.Windows.Forms.ToolStripMenuItem tsmisair;
     }
 }
 

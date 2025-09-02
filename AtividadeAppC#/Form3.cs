@@ -17,12 +17,20 @@ namespace AtividadeAppC_
         {
             InitializeComponent();
         }
+
         double idade, salario2, salario, aumento;
         string nome, sexo;
         private void btncalcular_Click(object sender, EventArgs e)
         {
 
-
+            bool isNumeric = double.TryParse(txtidade.Text, out idade);
+            if (!isNumeric)
+            {
+                MessageBox.Show("Por favor, insira um valor numérico válido para a idade.");
+                return; // Sai do método se a conversão falhar
+            }
+             isNumeric = double.TryParse(txtsalario.Text, out salario);
+            
             nome = txtnome.Text;
             sexo = txtsexo.Text;
             idade = Convert.ToDouble(txtidade.Text);
@@ -33,11 +41,18 @@ namespace AtividadeAppC_
                     aumento = 100;
                 else
                     aumento = 50;
+                
             else if (sexo.Equals("F"))
                 if (idade >= 30)
                     aumento = 200;
                 else
                     aumento = 150;
+            else { 
+                MessageBox.Show("Insira M ou F para sexo.");
+            return;
+            }
+
+
 
             salario2 = salario + aumento;
             txtresultado.Text = salario2.ToString() + " é o novo salário de " + nome;
@@ -52,6 +67,29 @@ namespace AtividadeAppC_
 
         private void lblnome_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtidade.Clear();
+            txtnome.Clear();
+            txtsexo.Clear();    
+            txtsalario.Clear();
+            txtresultado.Clear();   
+            txtnome.Focus();
+        }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            frmmenu menu = new frmmenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void frmexercicio2_Load(object sender, EventArgs e)
+        {
+
 
         }
 

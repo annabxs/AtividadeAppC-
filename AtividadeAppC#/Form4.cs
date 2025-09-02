@@ -35,5 +35,19 @@ namespace AtividadeAppC_
             P = LC * VU;
             txttotalpago.Text = P.ToString(); 
         }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            frmmenu menu = new frmmenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtquantidadelivros.Clear();
+            txttotalpago.Clear();
+            txtquantidadelivros.Focus();
+        }
     }
 }

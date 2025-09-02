@@ -52,5 +52,10 @@ namespace AtividadeAppC_
             Hide();
             frmexercicio5.Show();
         }
+
+        private void tsmisair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
