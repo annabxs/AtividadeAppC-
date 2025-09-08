@@ -17,16 +17,26 @@ namespace AtividadeAppC_
             InitializeComponent();
         }
 
+        double publicototal, rendatotal, pp, pg, pa, pc, rp, rg, ra, rc;
+
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            double publicototal, rendatotal, rp, rg, ra, rc;
 
             publicototal = Convert.ToDouble(txtpublicototal.Text);
 
-            rp = publicototal * 0.1 * 5;
-            rg = publicototal * 0.5 * 10;
-            ra = publicototal * 0.3 * 20;
-            rc = publicototal * 0.1 * 30;
+            pp = publicototal * 0.1;
+            pg = publicototal * 0.5;
+            pa = publicototal * 0.3;
+            pc = publicototal * 0.1;
+
+            if (pp > 0)
+                rp = pp * 5;
+            if (pg > 0)
+                rg = pg * 10;
+            if (pa > 0)
+                ra = pa * 20;
+            if (pc > 0)
+                rc = pc * 30;
 
             rendatotal = rp + rg + ra + rc;
 
